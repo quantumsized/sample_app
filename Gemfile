@@ -6,7 +6,8 @@ gem 'rails', '4.0.2'
 #gem 'pg', '0.15.1'
 
 group :development, :test do
-  gem 'rspec-rails', '2.13.1'
+#  gem 'rspec-rails', '2.13.1'
+  gem 'rspec-rails'
   gem 'sqlite3', '1.3.8'
   gem 'guard-rspec'
   gem 'spork-rails'
