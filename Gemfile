@@ -4,13 +4,12 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.2'
 gem 'bootstrap-sass', '2.3.2.0'
-#gem 'pg', '0.15.1'
+gem 'pg', '0.15.1'
 gem 'sprockets', '~> 2.0'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
 #  gem 'rspec-rails'
-  gem 'sqlite3', '1.3.8'
   gem 'guard-rspec', '2.5.0'
   gem 'spork-rails', '4.0.0'
   gem 'guard-spork', '1.5.0'
