@@ -20,25 +20,26 @@ describe "Static pages" do
 
   describe "Help page" do
     before { visit help_path }
-    let(:heading) { 'Sample App' }
+    let(:heading)    { 'Sample App' }
     let(:page_title) { 'Help' }
 
-#    it_should_behave_like "all static pages"
-    it { should have_title(full_title('Help')) }
+    it { should have_title('Help') }
   end
 
   describe "About page" do
     before { visit about_path }
+    let(:heading)    { 'Sample App' }
+    let(:page_title) { 'About' }
 
-    it { should have_content('About') }
-    it { should have_title(full_title('About Us')) }
+    it { should have_title('About') } 
   end
 
   describe "Contact page" do
     before { visit contact_path }
+    let(:heading)    { 'Sample App' }
+    let(:page_title) { 'Contact' }
 
-    it { should have_content('Contact') }
-    it { should have_title(full_title('Contact')) }
+    it { should have_title('Contact') } 
   end
 
   it "should have the right links on the layout" do
